@@ -63,6 +63,17 @@ The following is a simplified tree overview to give you an idea of the project l
 - add : `fraud_mock.csv` into folder `data`
 - add : `fraud_detection_rf_model.joblib` into folder `weight`
 
+### ! Before Runing a notebook !
+
+run
+
+```bash
+make init
+source .venv/bin/activate
+```
+
+After that, select the env that crete in the nootbook.
+
 ---
 
 ## 🧪 EDA Instructions
