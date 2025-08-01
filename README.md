@@ -58,6 +58,11 @@ The following is a simplified tree overview to give you an idea of the project l
 └── README.md
 ```
 
+### ! Add data before start runing !
+
+- add : `fraud_mock.csv` into folder `data`
+- add : `fraud_detection_rf_model.joblib` into folder `weight`
+
 ---
 
 ## 🧪 EDA Instructions
