@@ -72,6 +72,13 @@ To train the fraud detection model and export the weights:<br> `notebook/Traning
 
 ## 🚀 Start the API Service
 
+Add `.env` file with this content:
+
+```
+DB_USER=scb
+DB_PASSWORD=scb
+```
+
 We’ve simplified the launch process. Just run:
 
 ```bash
