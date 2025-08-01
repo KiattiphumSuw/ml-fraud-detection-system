@@ -1,0 +1,21 @@
+version: "3.8"
+services:
+  fraud_detection:
+    build:
+      context: .
+      dockerfile: docker/Dockerfile
+    ports:
+      - "8080:8080"
+    env_file:
+      - .env
+    depends_on:
+      - fraud_detection_db
+  fraud_detection_db:
+    image: postgres:15-alpine
+    container_name: transaction-db
+    environment:
+      POSTGRES_USER: scb
+      POSTGRES_PASSWORD: scb
+      POSTGRES_DB: transaction
+    ports:
+      - "5432:5432"

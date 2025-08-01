@@ -1,0 +1,14 @@
+DB_NAME: transaction
+DB_HOST: fraud_detection_db
+DB_PORT: 5432
+
+MODEL_WEIGHT_PATH: weight/fraud_detection_rf_model.joblib
+
+FEATURE_COLS:
+  - time_ind
+  - transac_type
+  - amount
+  - src_bal
+  - src_new_bal
+  - dst_bal
+  - dst_new_bal
